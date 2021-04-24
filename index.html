@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="typeahead.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap3-typeahead.min.js"></script>
+    <script type="text/javascript" src="typeahead-bundle-min-0.11.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Artifact Search!</title>
+</head>
+<body>
+  <div class="jumbotron bg-info text-light">
+      <h4 class="center">Artifact Search</h4>
+      <p>This search capability allows you to find applications using artifacts</p>
+  </div>
+  <div class="container">
+      <div class="row mt-5"></div> <!-- Spacer -->
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-6"><!--width is set by this div -->
+          <div class="input-group">
+            <input type="text" id="search-box1" class="typeahead form-control" placeholder="Artifact to search for...">
+            <span class="input-group-btn">
+                <button type="button" id="search-button" class="btn btn-primary">
+                      <i class="fas fa-search">Go</i>
+                </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5"></div> <!-- Spacer -->
+
+      <div id="result" class="row">
+        <div>
+          <p>This is where the applications will be listed:</p>
+          <table id="result-container">
+            <thead>
+              <tr><th>Application name</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>???</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  </div>
+</body>
+</html>
